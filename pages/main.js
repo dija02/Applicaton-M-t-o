@@ -4,7 +4,7 @@ document.getElementById('villeForm').addEventListener('submit', function (event)
     const ville = document.getElementById('ville').value;
 
     // Création de la requête vers le serveur PHP
-    fetch('recuperer_meteo.php', {
+    fetch('meteo.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: `ville=${encodeURIComponent(ville)}`
